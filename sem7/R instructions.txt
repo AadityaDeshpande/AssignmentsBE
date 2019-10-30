@@ -1,0 +1,30 @@
+
+Q1)how to check r is installed or not in linux ?
+	{will lead to empty result if R is not installed}
+	
+commands are
+		
+		locate -b R | fgrep -w R/bin
+		
+		type R
+		
+		which R
+
+
+we will Install R with OpenBLAS
+
+sudo apt-get install libopenblas-base r-base
+
+
+sudo apt-get install --upgrade gdebi
+
+cd ~/Downloads	
+
+wget https://download1.rstudio.org/rstudio-xenial-1.1.419-amd64.deb
+
+sudo gdebi rstudio-xenial-1.1.379-amd64.deb //# Don't use this one.
+
+sudo gdebi rstudio-xenial-1.1.419-amd64.deb
+
+
+
